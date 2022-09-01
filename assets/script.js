@@ -6,7 +6,7 @@ function generatePassword() {
     "How many characters do you want in your password? Password may contain between 8 - 128 characters."
   );
   if (parseInt(passwordLength) >= 8 && parseInt(passwordLength) <= 128) {
-    console.log(passwordLength);
+    // console.log(passwordLength);
 
     // User input must be between 8-128 characters
 
@@ -23,10 +23,10 @@ function generatePassword() {
     var includeNumbers = confirm(
       "Do you want to include numbers in your password?"
     );
-    console.log(includeUppercase);
-    console.log(includeLowercase);
-    console.log(includeSpecial);
-    console.log(includeNumbers);
+    // console.log(includeUppercase);
+    // console.log(includeLowercase);
+    // console.log(includeSpecial);
+    // console.log(includeNumbers);
 
     if (
       includeLowercase === true ||
@@ -39,25 +39,23 @@ function generatePassword() {
       if (includeUppercase) {
         availableCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       }
-      console.log(availableCharacters);
+      // console.log(availableCharacters);
 
       // checks to see if lowercase was desired and adds the characters to the bank of available
       if (includeLowercase) {
         availableCharacters =
           availableCharacters + "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase();
       }
-
+      // console.log(availableCharacters);
       if (includeSpecial) {
-        availableCharacters =
-        availableCharacters + "!@#$%^&*~`-/\:;<>+=";
+        availableCharacters = availableCharacters + "!@#$%^&*~`-/:;<>+=";
       }
-
+      // console.log(availableCharacters);
       if (includeNumbers) {
-        availableCharacters =
-        availableCharacters +"123456789";
+        availableCharacters = availableCharacters + "123456789";
       }
 
-      console.log(availableCharacters);
+      // console.log(availableCharacters);
 
       var completedPassword = "";
       for (var i = 0; i < parseInt(passwordLength); i++) {
@@ -69,7 +67,7 @@ function generatePassword() {
         var randomCharacter = availableCharacters[randomIndex];
         console.log(randomCharacter);
         completedPassword = completedPassword + randomCharacter;
-        console.log(completedPassword);
+        // console.log(completedPassword);
       }
       return completedPassword;
     } else {
