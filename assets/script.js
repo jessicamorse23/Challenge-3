@@ -63,7 +63,7 @@ function generatePassword() {
         var randomIndex = Math.floor(
           Math.random() * availableCharacters.length
         );
-        console.log(randomIndex);
+        // console.log(randomIndex);
         var randomCharacter = availableCharacters[randomIndex];
         console.log(randomCharacter);
         completedPassword = completedPassword + randomCharacter;
@@ -81,7 +81,7 @@ function generatePassword() {
   // Password is displayed in alert or written on the page
   else {
     // user enters an incorrect length
-    alert(`the length needs to be a number between 8 and 128`);
+    alert("the length needs to be a number between 8 and 128");
   }
 }
 
