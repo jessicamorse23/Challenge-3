@@ -49,7 +49,7 @@ function generatePassword() {
 
       if (includeSpecial) {
         availableCharacters =
-        availableCharacters + "!@#$%^&*";
+        availableCharacters + "!@#$%^&*~`-/\:;<>+=";
       }
 
       if (includeNumbers) {
@@ -86,8 +86,6 @@ function generatePassword() {
     alert(`the length needs to be a number between 8 and 128`);
   }
 }
-// generatePassword();
-// return null;
 
 var generateBtn = document.querySelector("#generate");
 
