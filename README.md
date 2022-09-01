@@ -1,4 +1,4 @@
-# Challenge-3
+# Challenge-3 - Password Generator Project
 
 ## Description
 
